@@ -1,6 +1,6 @@
 {
   "name": "@intgetion/companies",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Companies for INTGETION JOB LIST: company profiles, members, logos, verification by corporate email or DNS, trust, engagement briefs.",
   "license": "UNLICENSED",
   "type": "module",

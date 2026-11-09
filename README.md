@@ -25,7 +25,7 @@ Every request except `GET /health` needs `Authorization: Bearer <COMPANIES_SERVI
 |---|---|---|---|
 | GET | `/health` | — | `{ ok }` |
 | POST | `/v1/companies` | person | create (201); same domain or similar name is queued as a possible duplicate |
-| GET | `/v1/me/companies` | person | companies the person belongs to |
+| GET | `/v1/me/companies` | person | companies the person belongs to, with their `role` |
 | PUT | `/v1/me/company-agent-briefs` | person | `{ enabled }` for companies they manage |
 | GET | `/v1/companies/:slug` | public | company card |
 | PATCH | `/v1/companies/:id` | owner/admin | edit; complete requisites send it to review |

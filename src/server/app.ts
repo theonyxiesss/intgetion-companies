@@ -85,7 +85,7 @@ const routes: Route[] = [
     pattern: /^\/v1\/me\/companies$/,
     run: async (request) => ({
       companies: (await companies.getCompaniesForUser(requireCaller(request).userId)).map(
-        companies.toCompanyDto,
+        (company) => ({ ...companies.toCompanyDto(company), role: company.role }),
       ),
     }),
   },
